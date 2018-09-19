@@ -1,0 +1,59 @@
+{
+  "name": "blog.portal.web",
+  "version": "0.1.1",
+  "description": "raddeana, blog, npm settings",
+  "main": "server/app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raddeana/blog.admin.git"
+  },
+  "author": "chenxiangyu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raddeana/blog.admin/issues",
+    "email": "wowcxy2008@126.com"
+  },
+  "homepage": "raddeana.cn",
+  "private": true,
+  "engines": {
+    "node": ">=8.9.1"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    ".istanbul.yml",
+    ".travis.yml",
+    ".eslintrc"
+  ],
+  "scripts": {
+    "start": "node server/app.js --harmony production",
+    "start:dev": "./node_modules/.bin/nodemon -e js,html --ignore ./assets/ --ignore ./static/ --ignore ./automation/ server/app.js --harmony development",
+    "lint": "eslint",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "koa": "latest",
+    "koa-bodyparser": "latest",
+    "koa-compress": "latest",
+    "koa-error": "latest",
+    "koa-generic-session": "latest",
+    "koa-logger": "latest",
+    "koa-passport": "latest",
+    "koa-response-time": "latest",
+    "koa-router": "latest",
+    "koa-proxy": "latest",
+    "koa-ejs": "latest",
+    "lodash": "latest",
+    "mysql2": "latest",
+    "os": "latest",
+    "passport-local": "latest",
+    "redis": "latest",
+    "request": "latest",
+    "sequelize": "latest",
+  },
+  "devDependencies": {
+    "nodemon": "latest",
+    "eslint": "latest",
+    "babel-eslint": "latest"
+  }
+}
