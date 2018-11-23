@@ -1,5 +1,5 @@
 /**
- * 
+ * Eslint 配置
  * @author Philip
  */
 module.exports = {
