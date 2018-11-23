@@ -19,7 +19,8 @@
     "gulp-clean-css": "^4.0.0",
     "gulp-eslint": "^5.0.0",
     "gulp-uglify": "^3.0.1",
-    "gulp-webserver": "^0.9.1"
+    "gulp-webserver": "^0.9.1",
+    "gulp-sequence": "^1.0.0"
   },
   "engines": {
     "node": ">= 8.9.0",
