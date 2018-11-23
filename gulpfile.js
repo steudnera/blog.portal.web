@@ -5,6 +5,7 @@ const uglify = require('gulp-uglify');
 const clean = require('gulp-clean');
 const rev = require('gulp-rev');
 const revReplace = require('gulp-rev-replace');
+const revCollector = require('gulp-rev-collector');
 const less = require('gulp-less');
      
 /**
