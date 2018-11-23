@@ -57,7 +57,7 @@ gulp.task('compress-js', () => {
 /**
  * 构建开发环境模板
  */
-gulp.task('build-template-prod', () => {
+gulp.task('build-template-dev', () => {
     const manifest = JSON.parse(fs.readFileSync('dist/manifest.json'))
      
     return gulp.src('html/**/*.html')
@@ -100,8 +100,9 @@ gulp.task('webserver', () => {
 /**
  * 开发环境文件监听
  */
-const jsWatcher = gulp.watch(['./js'], ['clean', 'build-js'])
-const lessWatcher = gulp.watch(['./less'], ['clean', 'build-less'])
+const jsWatcher = gulp.watch(['js'], ['clean', 'build-js'])
+const lessWatcher = gulp.watch(['less'], ['clean', 'build-less'])
+const htmlWatcher = gulp.watch(['html'], ['clean', 'build-template-dev'])
 
 jsWatcher.on('change', (event) => {
      console.log('File ' + event.path + ' was ' + event.type + ', running tasks...')
@@ -109,4 +110,8 @@ jsWatcher.on('change', (event) => {
 
 lessWatcher.on('change', (event) => {
      console.log('File ' + event.path + ' was ' + event.type + ', running tasks...')
+})
+
+htmlWatcher.on('change', (event) => {
+    console.log('File ' + event.path + ' was ' + event.type + ', running tasks...')
 })
