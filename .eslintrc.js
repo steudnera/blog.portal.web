@@ -4,7 +4,6 @@
  */
 module.exports = {
   root: true,
-  parser: 'eslint',
   parserOptions: {
     sourceType: 'module'
   },
