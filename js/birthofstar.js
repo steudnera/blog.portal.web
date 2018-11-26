@@ -78,41 +78,9 @@ function animate (delta) {
     render(delta);
 }
 
-let capturer = new CCapture({ 
-    verbose: true, 
-    framerate: 30,
-    // motionBlurFrames: 4,
-    quality: 90,
-    format: 'webm',
-    workersPath: 'js/'
-});
-
-let capturing = false;
-
-isCapturing = function (val) {
-    if(val === false && window.capturing === true) {
-        capturer.stop();
-        capturer.save();
-    } else if(val === true && window.capturing === false) {
-        capturer.start();
-    }
-    
-    capturing = val;
-}
-
-toggleCapture = function () {
-    isCapturing(!capturing);
-}
-
-window.addEventListener('keyup', function(e) { console.log(e.keyCode); if(e.keyCode == 68) toggleCapture(); });
-
 let then = 0;
 
 function render (delta) {
     uniforms.u_time.value = -11200 + delta * 0.0015;
     renderer.render( scene, camera );
-
-    if(capturing) {
-        capturer.capture( renderer.domElement );
-    }
 }
