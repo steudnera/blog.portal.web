@@ -69,18 +69,14 @@ gulp.task('build-template-dev', () => {
     return gulp.src('html/**/*.html')
          .pipe(template({
              path: {
-                css: {
-                    birthofstar: './birthofstar.css',
-                    forgetPassword: './forget-password.css',
-                    register: './register.css',
-                    login: './login.css'
-                },
-                js: {
-                    birthofstar: './birthofstar.js',
-                    forgetPassword: './forget-password.js',
-                    register: './register.js',
-                    login: './login.js'
-                }
+                cssBirthofstar: './birthofstar.css',
+                cssForgetPassword: './forget-password.css',
+                cssRegister: './register.css',
+                cssLogin: './login.css',
+                jsBirthofstar: './birthofstar.js',
+                jsForgetPassword: './forget-password.js',
+                jsRegister: './register.js',
+                jsLogin: './login.js'
              }
          }))
          .pipe(gulp.dest('dist'))
