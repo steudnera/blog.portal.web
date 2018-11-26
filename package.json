@@ -6,7 +6,7 @@
   "private": false,
   "scripts": {
     "dev": "gulp dev",
-    "lint": "eslint --ext .js, dist",
+    "lint": "node_modules/.bin/eslint --ext .js, dist",
     "build": "gulp build"
   },
   "devDependencies": {
