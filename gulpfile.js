@@ -68,11 +68,11 @@ gulp.task('compress-js', () => {
 gulp.task('build-template-dev', () => {
     return gulp.src('html/**/*.html')
          .pipe(template({
-            cssBirthofstar: './birthofstar.css',
+            cssRainbowBlender: './rainbow-blender.css',
             cssForgetPassword: './forget-password.css',
             cssRegister: './register.css',
             cssLogin: './login.css',
-            jsBirthofstar: './birthofstar.js',
+            jsRainbowBlender: './rainbow-blender.js',
             jsForgetPassword: './forget-password.js',
             jsRegister: './register.js',
             jsLogin: './login.js'
