@@ -5,7 +5,7 @@
   </head>
   <body>
     <div class=""></div>
-     <script id="vertexShader" type="x-shader/x-vertex">
+    <script id="vertexShader" type="x-shader/x-vertex">
         void main() {
             gl_Position = vec4( position, 1.0 );
         }
@@ -15,12 +15,14 @@
         uniform vec2 u_mouse;
         uniform float u_time;
         uniform sampler2D u_noise;
-        vec3 hash33(vec3 p){ 
+        vec3 hash33 (vec3 p) { 
             return texture2D(u_noise, p.xy * p.z * 256.).rgb;
         }
         
-        mat2 rot2( float a ){ vec2 v = sin(vec2(1.570796, 0) + a);	return mat2(v, -v.y, v.x); }
-        // otaviogood's noise from https://www.shadertoy.com/view/ld2SzK
+        mat2 rot2( float a ){ 
+            vec2 v = sin(vec2(1.570796, 0) + a);	
+            return mat2(v, -v.y, v.x); 
+        }
         
         const float nudge = 0.739513;	// size of perpendicular vector
         float normalizer = 1.0 / sqrt(1.0 + nudge*nudge);	// pythagorean theorem on that perpendicular to maintain scale
