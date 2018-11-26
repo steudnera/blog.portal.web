@@ -68,7 +68,20 @@ gulp.task('compress-js', () => {
 gulp.task('build-template-dev', () => {
     return gulp.src('html/**/*.html')
          .pipe(template({
-             env: 'dev'
+             path: {
+                css: {
+                    birthofstar: './birthofstar.css',
+                    forgetPassword: './forget-password.css',
+                    register: './register.css',
+                    login: './login.css'
+                },
+                js: {
+                    birthofstar: './birthofstar.js',
+                    forgetPassword: './forget-password.js',
+                    register: './register.js',
+                    login: './login.js'
+                }
+             }
          }))
          .pipe(gulp.dest('dist'))
 })
