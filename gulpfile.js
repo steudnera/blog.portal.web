@@ -68,16 +68,14 @@ gulp.task('compress-js', () => {
 gulp.task('build-template-dev', () => {
     return gulp.src('html/**/*.html')
          .pipe(template({
-             path: {
-                cssBirthofstar: './birthofstar.css',
-                cssForgetPassword: './forget-password.css',
-                cssRegister: './register.css',
-                cssLogin: './login.css',
-                jsBirthofstar: './birthofstar.js',
-                jsForgetPassword: './forget-password.js',
-                jsRegister: './register.js',
-                jsLogin: './login.js'
-             }
+            cssBirthofstar: './birthofstar.css',
+            cssForgetPassword: './forget-password.css',
+            cssRegister: './register.css',
+            cssLogin: './login.css',
+            jsBirthofstar: './birthofstar.js',
+            jsForgetPassword: './forget-password.js',
+            jsRegister: './register.js',
+            jsLogin: './login.js'
          }))
          .pipe(gulp.dest('dist'))
 })
