@@ -98,7 +98,7 @@ gulp.task('build-template-prod', () => {
  * web服务器
  */
 gulp.task('webserver', () => {
-    gulp.src(['./html', './dist'])             // 服务器目录
+    gulp.src(['./dist'])             // 服务器目录
         .pipe(webserver({                      // 运行gulp-webserver
             port: 8080,                        // 端口，默认8000
             livereload: true,                  // 启用LiveReload
