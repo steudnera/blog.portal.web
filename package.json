@@ -6,20 +6,32 @@
   "private": false,
   "scripts": {
     "dev": "gulp dev",
-    "start": "npm run dev",
-    "lint": "gulp eslint",
+    "lint": "eslint --ext .js, dist",
     "build": "gulp build"
   },
   "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
     "gulp": "^3.9.1",
-    "gulp-rev": "^9.0.0",
+    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-eslint": "^5.0.0",
-    "gulp-uglify": "^3.0.1",
+    "gulp-less": "^4.0.1",
+    "gulp-rev": "^9.0.0",
     "gulp-sequence": "^1.0.0",
     "gulp-template": "^5.0.0",
-    "gulp-webserver": "^0.9.1"
+    "gulp-uglify": "^3.0.1",
+    "gulp-webserver": "^0.9.1",
+    "pre-commit": "^1.2.2",
+    "run-sequence": "^2.2.1"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "engines": {
     "node": ">= 8.9.0",
     "npm": ">= 5.5.1"
