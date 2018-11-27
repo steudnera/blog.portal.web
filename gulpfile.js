@@ -114,7 +114,7 @@ gulp.task('webserver', () => {
  * 开发环境文件监听
  */
 const jsWatcher = gulp.watch(['js/**/*.js'], ['build-js'])
-const lessWatcher = gulp.watch(['less/**/*.less'], ['build-less'])
+const lessWatcher = gulp.watch(['less/**/*.less'], ['build-css'])
 const htmlWatcher = gulp.watch(['html/**/*.html'], ['build-template-dev'])
 
 gulp.task('watch', () => {
