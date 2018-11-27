@@ -15,4 +15,4 @@ module.exports = {
   },
   build: 'npm run build',
   dist: 'dist',
-};
+}
