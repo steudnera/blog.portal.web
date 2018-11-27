@@ -6,7 +6,36 @@
     <link rel="stylesheet" type="text/css" href="<%= cssLogin %>" />
   </head>
   <body>
-    <div id="container"></div>
+    <div id="container">
+        <div class="panel">
+            <div class="panel-input-wrapper">
+                <input 
+                    class="input-text" 
+                    placeholder="请输入账号" 
+                />
+            </div>
+            <div class="panel-input-wrapper">
+                <input 
+                    class="input-text" 
+                    placeholder="请输入账号"
+                />
+            </div>
+            <div class="panel-input-wrapper">
+                <input
+                    id="remember-password"
+                    class="input-checkout remember-password"
+                    name="remember-password"
+                    type="checkbox"
+                />
+                <label>
+                    记住密码
+                </label>
+            </div>
+            <div class="buttons-container">
+                <button class="button-primary">登陆</button>
+            </div>
+        </div>
+    </div>
     <script src="<%= jsRainbowBlender %>" type="text/javascript"></script>
     <script src="<%= jsLogin %>" type="text/javascript"></script>
   </body>
