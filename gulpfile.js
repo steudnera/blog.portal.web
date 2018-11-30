@@ -72,10 +72,12 @@ gulp.task('build-template-dev', () => {
             cssForgetPassword: './forget-password.css',
             cssRegister: './register.css',
             cssLogin: './login.css',
+            cssResetPassword: './reset-password.css',
             jsRainbowBlender: './rainbow-blender.js',
             jsForgetPassword: './forget-password.js',
             jsRegister: './register.js',
-            jsLogin: './login.js'
+            jsLogin: './login.js',
+            jsResetPassword: './reset-password.js'
          }))
          .pipe(gulp.dest('dist'))
 })
@@ -99,10 +101,10 @@ gulp.task('build-template-prod', () => {
  */
 gulp.task('webserver', () => {
     gulp.src(['./dist'])             // 服务器目录
-        .pipe(webserver({                      // 运行gulp-webserver
-            port: 8080,                        // 端口，默认8000
-            livereload: true,                  // 启用LiveReload
-            open: true,                        // 服务器启动时自动打开网页
+        .pipe(webserver({            // 运行gulp-webserver
+            port: 8080,              // 端口，默认8000
+            livereload: true,        // 启用LiveReload
+            open: true,              // 服务器启动时自动打开网页
             directoryListing: {
                 enable: true,
                 path: './www'
