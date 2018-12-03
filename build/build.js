@@ -1,6 +1,6 @@
 /**
  * 构建入口
- * @author chenxiangyu
+ * @author Philip
  */
 'use strict'
 require('./check-versions')();
