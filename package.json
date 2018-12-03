@@ -4,11 +4,6 @@
   "description": "blog portal project",
   "author": "Philip <wowcxy2008@126.com>",
   "private": false,
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
-  },
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "npm run dev",
@@ -45,7 +40,6 @@
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^3.2.0",
     "http-proxy-middleware": "^0.17.3",
-    "husky": "^1.2.0",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
     "mini-css-extract-plugin": "^0.4.1",
