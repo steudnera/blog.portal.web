@@ -2,17 +2,16 @@
  * 部署配置
  * @author Philip
  */
-
 module.exports = {
   name: 'portal',
-  project: 'portal',
+  dist: 'dist',
   type: 'web',
+  build: 'build/build.js',
+  project: 'portal',
   ali_oss: {
     accessKeyId: 'LTAI2PBQSdfLOUme',
     accessKeySecret: 'uMuFXEuK06PGTEmHRiFCvoCNtgx8nb',
-    bucket: 'raddeana',
-    region: 'oss-cn-beijing',
-  },
-  build: 'npm run build',
-  dist: 'dist',
+    bucket: 'raddeana-portal',
+    region: 'oss-cn-hangzhou'
+  }
 }
