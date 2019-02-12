@@ -1,21 +1,37 @@
 <html>
   <head>
     <title>登陆</title>
-    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link rel="bookmark" type="image/x-icon" href="https://raddeana-materials.oss-cn-hangzhou.aliyuncs.com/images/logo.png" />
+    <link rel="shortcut icon" href="https://raddeana-materials.oss-cn-hangzhou.aliyuncs.com/images/logo.png">
+    <link href="https://raddeana-libs.oss-cn-hangzhou.aliyuncs.com/pace/pace-theme-flash.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://raddeana-libs.oss-cn-hangzhou.aliyuncs.com/pace/pace.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://raddeana-libs.oss-cn-hangzhou.aliyuncs.com/extra/normalize.css" />
+    <link rel="stylesheet" href="https://raddeana-libs.oss-cn-hangzhou.aliyuncs.com/jquery/jquery.toast.min.css">
+    <style type="text/css">
+        body {
+            background: #0c0c0c;
+        }
+
+        .panel {
+            display: none;
+        }
+    </style>
   </head>
   <body>
     <div id="container">
         <div class="panel">
             <h4 class="panel-title">登录</h4>
             <div class="panel-input-wrapper">
-                <input 
-                    class="input-text" 
-                    placeholder="请输入账号" 
+                <input
+                    id="username"
+                    class="input-text"
+                    placeholder="请输入账号/邮箱/或者手机号"
                 />
             </div>
             <div class="panel-input-wrapper">
-                <input 
-                    class="input-text" 
+                <input
+                    id="password"
+                    class="input-text"
                     placeholder="请输入密码"
                     type="password"
                 />
@@ -36,5 +52,7 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="https://raddeana-libs.oss-cn-hangzhou.aliyuncs.com/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://raddeana-libs.oss-cn-hangzhou.aliyuncs.com/jquery/jquery.toast.min.js"></script>
   </body>
 </html>

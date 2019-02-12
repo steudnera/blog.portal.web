@@ -17,5 +17,9 @@ module.exports = {
     "indent": ["error", 4],
     "generator-star-spacing": "off",
     "no-debugger": process.env.NODE_ENV === ' production' ? 'error' : 'off'
+  },
+  globals: {
+    "$": true,
+    "window": true
   }
 }

@@ -14,7 +14,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {},
     host: 'localhost',
-    port: 8080,
+    port: 8081,
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
