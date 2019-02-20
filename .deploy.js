@@ -7,7 +7,6 @@ module.exports = {
   dist: 'dist',
   type: 'web',
   build: 'build/build.js',
-  project: 'portal',
   ali_oss: {
     accessKeyId: 'LTAI2PBQSdfLOUme',
     accessKeySecret: 'uMuFXEuK06PGTEmHRiFCvoCNtgx8nb',
