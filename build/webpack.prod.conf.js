@@ -114,7 +114,10 @@ const webpackConfig = merge(baseWebpackConfig, {
     new webpack.HashedModuleIdsPlugin(),
 
     // manifest file
-    new ManifestPlugin()
+    new ManifestPlugin({
+      fileName: 'manifest.json',
+      prettyPrint: true
+    })
   ]
 })
 
