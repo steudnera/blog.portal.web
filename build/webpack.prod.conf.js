@@ -12,7 +12,9 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+const ManifestPlugin = require('webpack-plugin-manifest')
 
+// 配置
 const config = require('../config')
 const utils = require('./utils')
 const env = config.build.env
