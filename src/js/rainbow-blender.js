@@ -15,8 +15,9 @@ let blackHoleRadius = 50
 let attractionLimit = 0.2
 let attractionRadius = 150
 // let angleLimit = 0.4
-
+console.log('监听load')
 window.addEventListener('load', () => {
+    console.log('load 回调')
     canvas = document.createElement('canvas')
     ctx = canvas.getContext('2d')
 
