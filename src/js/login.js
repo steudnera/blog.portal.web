@@ -67,9 +67,12 @@ $Login.click(() => {
         window.location.href = '/charts'
     }, (res) => {
         let { status, responseJSON } = res
-        let { message } = responseJSON
 
-        $.toast(Object.assign({ text: message || `未知错误${status}` }, toastConfig))
+        if (responseJSON) {
+            $.toast(Object.assign({ text: responseJSON.message || `未知错误${status}` }, toastConfig))
+        } else {
+            $.toast('错误', toastConfig)
+        }
     }).done(() => {
         toggleProcessing(false)
     })

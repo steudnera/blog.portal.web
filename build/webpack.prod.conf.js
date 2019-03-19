@@ -72,7 +72,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         collapseWhitespace: true,
         removeAttributeQuotes: true
       },
-      chunks: ['rainbow-blender', 'forget-password'],
+      chunks: ['common', 'forget-password'],
       xhtml: true
     }),
 
@@ -84,7 +84,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         collapseWhitespace: true,
         removeAttributeQuotes: true
       },
-      chunks: ['rainbow-blender', 'login'],
+      chunks: ['common', 'login'],
       xhtml: true
     }),
 
@@ -96,7 +96,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         collapseWhitespace: true,
         removeAttributeQuotes: true
       },
-      chunks: ['rainbow-blender', 'register'],
+      chunks: ['common', 'register'],
       xhtml: true
     }),
 
@@ -108,7 +108,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         collapseWhitespace: true,
         removeAttributeQuotes: true
       },
-      chunks: ['rainbow-blender', 'reset-password'],
+      chunks: ['common', 'reset-password'],
       xhtml: true
     }),
 

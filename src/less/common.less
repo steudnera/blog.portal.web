@@ -12,58 +12,74 @@ body {
     margin: auto;
     padding: 10px 15px;
     background: rgba(0, 0, 0, 0.3);
-		border-radius: 3px;
-		display: block;
+    border-radius: 3px;
+    display: block;
 
     .panel-title {
-	    color: #4a6400;
-	    padding: 0 0 10px 0;
-	    margin: 15px 0 5px 16px;
-	    font-size: 18px;
-	    border-bottom: 1px solid #4a6400;
+        color: #4a6400;
+        padding: 0 0 10px 0;
+        margin: 15px 0 5px 16px;
+        font-size: 18px;
+        border-bottom: 1px solid #4a6400;
     }
 
-	.panel-input-wrapper {
-	    padding: 10px 15px;
+    .panel-input-wrapper {
+        padding: 10px 15px;
 
-	    label {
-			color: #737272;
-			line-height: 22px;
-			vertical-align: middle;
-			margin: 0 0 0 8px;
-	    }
+        label {
+            color: #496400;
+            line-height: 22px;
+            vertical-align: middle;
+            margin: 0 0 0 8px;
+        }
 
-	    .input-text {
-			background: transparent;
-			border: 1px solid #333;
-			padding: 9px 10px;
-			width: 100%;
-			outline: none;
-		    color: #b8b8b8;
-	    }
+        .input-text {
+            background: transparent;
+            border: 1px solid #496400;
+            padding: 9px 10px;
+            width: 100%;
+            outline: none;
+            color: #efef;
 
-	    .input-checkout {
-			vertical-align: middle;
-	    	background: transparent;
-			border: 1px solid #333;
-	    }
-	}
+            &::-webkit-input-placeholder {
+                color: #2e3e02;
+            }
 
-	.buttons-container {
-		margin: 15px 0 0 0;
-		padding: 15px 20px;
-		text-align: right;
+            &:-moz-placeholder {
+                color: #2e3e02;
+            }
 
-		.button-primary {
-			width: 75px;
-			border-radius: 3px;
-			text-align: center;
-			padding: 8px 10px;
-			background: #2b864c;
-			color: white;
-			border: none;
-			outline: none;
-			cursor: pointer;
-		}
-	}
+            &::-moz-placeholder {
+                color: #2e3e02;
+            }
+
+            &:-ms-input-placeholder {
+                color: #2e3e02;
+            }
+        }
+
+        .input-checkout {
+            vertical-align: middle;
+            background: transparent;
+            border: 1px solid #496400;
+        }
+    }
+
+    .buttons-container {
+        margin: 15px 0 0 0;
+        padding: 15px 20px;
+        text-align: right;
+
+        .button-primary {
+            min-width: 75px;
+            border-radius: 3px;
+            text-align: center;
+            padding: 8px 10px;
+            background: #2b864c;
+            color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+    }
 }

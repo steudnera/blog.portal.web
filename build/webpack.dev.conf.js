@@ -37,25 +37,25 @@ module.exports = merge(baseWebpackConfig, {
     new HtmlWebpackPlugin({
       filename: 'forget-password.html',
       template: 'src/html/forget-password.html',
-      chunks: ['rainbow-blender', 'forget-password'],
+      chunks: ['forget-password'],
       xhtml: true
     }),
     new HtmlWebpackPlugin({
       filename: 'login.html',
       template: 'src/html/login.html',
-      chunks: ['rainbow-blender', 'login'],
+      chunks: ['login'],
       xhtml: true
     }),
     new HtmlWebpackPlugin({
       filename: 'register.html',
       template: 'src/html/register.html',
-      chunks: ['rainbow-blender', 'register'],
+      chunks: ['register'],
       xhtml: true
     }),
     new HtmlWebpackPlugin({
       filename: 'reset-password.html',
       template: 'src/html/reset-password.html',
-      chunks: ['rainbow-blender', 'reset-password'],
+      chunks: ['reset-password'],
       xhtml: true
     }),
     new FriendlyErrorsPlugin()
