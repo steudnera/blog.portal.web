@@ -35,7 +35,7 @@
         <div class="panel-input-wrapper">
             <input
                 class="input-text"
-                placeholder="请输入重复密码"
+                placeholder="请重复密码"
             />
         </div>
         <div class="buttons-container">
@@ -105,7 +105,7 @@
       }
       
       // This function describes the world in distances from any given 3 dimensional point in space
-      float world(in vec3 position, inout int object_id) {
+      float world (in vec3 position, inout int object_id) {
         vec3 pos = floor(position * .5);
         object_id = int(floor(pos.x + pos.y + pos.z));
         // position = mod(position, 1.) - .5;
@@ -118,12 +118,12 @@
         
         return world;
       }
-      float world(in vec3 position) {
+      float world (in vec3 position) {
         int dummy = 0;
         return world(position, dummy);
       }
       
-      Surface getSurface(int object_id, float rayDepth, vec3 sp) {
+      Surface getSurface (int object_id, float rayDepth, vec3 sp) {
         return Surface(
           object_id, 
           rayDepth, 
@@ -134,7 +134,7 @@
       }
       
       // The raymarch loop
-      Surface rayMarch(vec3 ro, vec3 rd, float start, float end, inout vec3 col, inout float steps) {
+      Surface rayMarch (vec3 ro, vec3 rd, float start, float end, inout vec3 col, inout float steps) {
         float sceneDist = 1e4;
         float rayDepth = start;
         int object_id = 0;
