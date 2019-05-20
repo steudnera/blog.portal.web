@@ -35,11 +35,11 @@ const toggleProcessing = function (processing) {
 }
 
 $Login.click(() => {
-    let unReg = /\w{6,}/
-    let pwReg = /$\w(\w|\d){7,}^/
+    const unReg = /\w{6,}/
+    const pwReg = /$\w(\w|\d){7,}^/
 
-    let username = $Username.val()
-    let password = $Password.val()
+    const username = $Username.val()
+    const password = $Password.val()
 
     if (!username && !unReg.test(username)) {
         $.toast(Object.assign({ text: '用户名填写错误' }, toastConfig))
@@ -66,7 +66,7 @@ $Login.click(() => {
     }).then(() => {
         window.location.href = '/charts'
     }, (res) => {
-        let { status, responseJSON } = res
+        const { status, responseJSON } = res
 
         if (responseJSON) {
             $.toast(Object.assign({ text: responseJSON.message || `未知错误${status}` }, toastConfig))
