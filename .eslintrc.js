@@ -16,10 +16,12 @@ module.exports = {
   rules: {
     "indent": ["error", 4],
     "generator-star-spacing": "off",
-    "no-debugger": process.env.NODE_ENV === ' production' ? 'error' : 'off'
+    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
+    "no-trailing-spaces": "off"
   },
   globals: {
     "$": true,
-    "window": true
+    "window": true,
+    "mat4": true
   }
 }

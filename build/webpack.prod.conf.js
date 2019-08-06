@@ -72,7 +72,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         collapseWhitespace: true,
         removeAttributeQuotes: true
       },
-      chunks: ['common', 'forget-password'],
+      chunks: ['common', 'energy-sphere', 'forget-password'],
       xhtml: true
     }),
 
@@ -84,7 +84,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         collapseWhitespace: true,
         removeAttributeQuotes: true
       },
-      chunks: ['common', 'login'],
+      chunks: ['common', 'energy-sphere', 'login'],
       xhtml: true
     }),
 
@@ -96,7 +96,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         collapseWhitespace: true,
         removeAttributeQuotes: true
       },
-      chunks: ['common', 'register'],
+      chunks: ['common', 'energy-sphere', 'register'],
       xhtml: true
     }),
 
@@ -108,7 +108,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         collapseWhitespace: true,
         removeAttributeQuotes: true
       },
-      chunks: ['common', 'reset-password'],
+      chunks: ['common', 'energy-sphere', 'reset-password'],
       xhtml: true
     }),
 

@@ -14,8 +14,8 @@ function resolve (dir) {
 
 module.exports = {
   entry: {
+    'energy-sphere': './src/js/energy-sphere.js',
     'forget-password': './src/js/forget-password.js',
-    'rainbow-blender': './src/js/rainbow-blender.js',
     'reset-password': './src/js/reset-password.js',
     'register': './src/js/register.js',
     'login': './src/js/login.js'

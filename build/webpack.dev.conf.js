@@ -37,25 +37,25 @@ module.exports = merge(baseWebpackConfig, {
     new HtmlWebpackPlugin({
       filename: 'forget-password.html',
       template: 'src/html/forget-password.html',
-      chunks: ['forget-password'],
+      chunks: ['energy-sphere', 'forget-password'],
       xhtml: true
     }),
     new HtmlWebpackPlugin({
       filename: 'login.html',
       template: 'src/html/login.html',
-      chunks: ['login'],
+      chunks: ['energy-sphere', 'login'],
       xhtml: true
     }),
     new HtmlWebpackPlugin({
       filename: 'register.html',
       template: 'src/html/register.html',
-      chunks: ['register'],
+      chunks: ['energy-sphere', 'register'],
       xhtml: true
     }),
     new HtmlWebpackPlugin({
       filename: 'reset-password.html',
       template: 'src/html/reset-password.html',
-      chunks: ['reset-password'],
+      chunks: ['energy-sphere', 'reset-password'],
       xhtml: true
     }),
     new FriendlyErrorsPlugin()
